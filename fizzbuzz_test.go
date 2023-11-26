@@ -25,3 +25,11 @@ func TestCanSayFizzFor6(t *testing.T) {
 		t.Errorf("We expected 'Fizz', but got '%v'", fizz)
 	}
 }
+
+func TestCanSayBuzzFor5(t *testing.T) {
+	buzz := fizzbuzz(5)
+
+	if buzz != "Buzz" {
+		t.Errorf("We expected 'Buzz', but got '%v'", buzz)
+	}
+}
