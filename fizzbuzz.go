@@ -16,7 +16,7 @@ func fizzbuzz(number int) string {
 		return "Fizz"
 	}
 
-	if number == 5 {
+	if isBuzz(number) {
 		return "Buzz"
 	}
 
@@ -25,7 +25,15 @@ func fizzbuzz(number int) string {
 }
 
 func isFizz(number int) bool {
-	remainder := math.Remainder(float64(number), 3)
+	return isDivisableBy(3, float64(number))
+}
+
+func isBuzz(number int) bool {
+	return isDivisableBy(5, float64(number))
+}
+
+func isDivisableBy(divisor float64, number float64) bool {
+	remainder := math.Remainder(number, divisor)
 	if remainder == 0 {
 		return true
 	}
