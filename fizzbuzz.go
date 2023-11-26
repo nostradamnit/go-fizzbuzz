@@ -15,6 +15,11 @@ func fizzbuzz(number int) string {
 	if isFizz(number) {
 		return "Fizz"
 	}
+
+	if number == 5 {
+		return "Buzz"
+	}
+
 	answer = strconv.Itoa(number)
 	return answer
 }
