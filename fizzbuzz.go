@@ -12,6 +12,10 @@ func main() {
 func fizzbuzz(number int) string {
 	var answer string
 
+	if isFizz(number) && isBuzz(number) {
+		return "FizzBuzz"
+	}
+
 	if isFizz(number) {
 		return "Fizz"
 	}
