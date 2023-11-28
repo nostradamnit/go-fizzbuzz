@@ -1,6 +1,6 @@
 # go-fizzbuzz
 
-# A FizzBuzz implementation in Go. The goal of the project is to teach TDD and SOLID principles using the FizzBuzz exercise. 
+A FizzBuzz implementation in Go. The goal of the project is to teach TDD and SOLID principles using the FizzBuzz exercise. 
 
 ## Setup
 ### Prerequisite
